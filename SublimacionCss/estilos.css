@@ -1,0 +1,169 @@
+
+
+body { 
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #e3ddd9 50%, #0859ae 50%);
+}
+
+  
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  
+}
+
+
+.titulo {
+    font-size: 3vw;
+    font-family: 'Montserrat';
+	font-weight: bold;
+	margin-top: 40px;
+    margin-bottom: 0px;
+    color: #ffffff;
+	line-height: 1.5; 
+}
+
+.subtitulo {
+    display: inline;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #000000;
+}
+
+
+
+.Home {
+
+  margin: 20%;
+  height: 30vh;
+  display: inline-block;
+  margin-top: -100px;
+}
+
+.Home img {
+  height: 25%;
+margin-bottom: 25px;
+
+}
+
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+
+ 
+
+
+   }
+   
+  .carousel-container {
+  width: 50%;
+  height: auto;
+}
+
+.carousel .carousel-item {
+	display: flex;
+    width: 68%;
+    height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	 
+   }
+   
+  .carousel .carousel-item img{
+	
+    width: 100%;	
+    height: 100%;
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	
+	}
+   
+   .carousel .indicators .indicator-item   {
+
+   transform: rotate(45deg);
+   margin:0 15px;
+   background: #36221c;
+   }
+   
+   .btn {
+    position: absolute;
+    bottom: 5vh;
+    left: 7%;
+    padding: 4vh 4vw;
+    border-radius: 20px;
+    background: none !important; /* Eliminar el fondo predeterminado */
+    border: none !important; /* Eliminar cualquier borde */
+    box-shadow: none !important; /* Eliminar cualquier sombra */
+    display: flex; /* Asegura que el contenedor del botón se ajuste al contenido */
+    justify-content: center; /* Centra el contenido dentro del botón */
+    align-items: center; /* Centra el contenido dentro del botón */
+}
+
+/* Asegurarse de que las imágenes dentro de .btn no tengan estilos de fondo */
+.btn img {
+    background: none; /* Eliminar fondo de la imagen */
+    box-shadow: none; /* Eliminar sombra de la imagen */
+}
+
+  .btn-content {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-text {
+            position: absolute;
+			text-transform: lowercase; /* Convierte el texto a minúsculas */
+            font-size: 2vh; /* Ajusta el tamaño del texto según sea necesario */
+            top: -40%; /* Ajusta este valor según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 2px 5px;
+            border-radius: 5px;
+            line-height: 1.2; /* Ajusta el interlineado según sea necesario */
+            white-space: nowrap; /* Asegura que el texto esté en una sola línea */
+			font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+			
+        }
+		
+		
+.carousel .carousel-item. btn:hover {
+    color: #000000; /* Color del texto al pasar el mouse por encima */
+}
+
+
+   @media all and (min-width: 155px) and (max-width: 1023px) {
+
+
+
+.carousel .carousel-item {
+  display: flex;
+  width: 57%;
+  height: 50%; /* Ocupa el 100% del alto del carrousel */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
