@@ -1,0 +1,440 @@
+
+
+body { 
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #e3ddd9 50%, #0859ae 50%);
+}
+
+  /* Contenedor central */
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  
+}
+
+/* Estilo del título */
+.titulo {
+    font-size: 3vw;
+    font-family: 'Montserrat';
+	font-weight: bold;
+	margin-top: 40px;
+    margin-bottom: 0px;
+    color: #ffffff;
+	line-height: 1.5; 
+}
+
+/* Estilo del subtítulo */
+
+.subtitulo {
+    display: inline;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+/* Línea de división */
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #000000;
+}
+
+
+/* Sección Home */
+.Home {
+
+  margin: 20%;
+  height: 30vh;
+  display: inline-block;
+  margin-top: -100px;
+}
+
+
+.Home img {
+  height: 25%;
+margin-bottom: 25px;
+
+}
+
+
+/* Estilos para el video (iframe) */
+iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* Estilos para el carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    z-index: 1; /* Asegura que el carrusel esté por encima de otros elementos */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Asegúrate de que el contenedor ocupe toda la altura */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  flex-direction: column;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Esto mantiene el contenido dentro de los límites del contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+   
+   .carousel .indicators .indicator-item   {
+
+   
+   transform: rotate(45deg);
+   margin:0 15px; /* Cambia el espacio entre los puntos */
+   background: #36221c;
+   }
+   
+   .carousel .carousel-item. btn:hover {
+    color: #000000; /* Color del texto al pasar el mouse por encima */
+}
+
+
+   .carousel .carousel-item2. btn:hover {
+    color: #000000; /* Color del texto al pasar el mouse por encima */
+}
+
+
+
+
+.carousel .carousel-item iframe {
+    width: 50%;
+    height: 100%;
+    object-fit: contain; /* Esto mantiene el contenido dentro de los límites del contenedor */
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+/* Flechas de navegación */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3; /* Asegura que las flechas estén por encima del iframe */
+}
+
+
+.carousel-arrow.left {
+    left: 10%;
+}
+
+.carousel-arrow.right {
+    right: 10%;
+}
+  
+   
+
+.carousel-txt {
+  position: absolute; /* Posiciona el texto sobre la imagen */
+  bottom: 10%; /* Ajusta la posición del texto desde la parte inferior */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%); /* Asegura que el texto esté centrado en la imagen */
+  font-size: 0px; /* Ajusta el tamaño del texto según sea necesario */
+  color: white; /* Cambia el color del texto para que sea legible sobre la imagen */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega una sombra para mejorar la visibilidad */
+  max-width: 90%; /* Limita el ancho del texto para evitar que sobresalga */
+  text-align: center; /* Centra el texto */
+  line-height: 1.4; /* Ajusta el espaciado entre líneas si es necesario */
+  padding: 5px;
+    z-index: 0;
+	  border: 0px dashed red;
+
+}
+
+
+   /* Estilo del botón */
+   
+   .btn {
+    position: absolute;
+    bottom: 5vh;
+    left: 20%;
+    padding: 4vh 4vw;
+    border-radius: 20px;
+    background: none !important; /* Eliminar el fondo predeterminado */
+    border: none !important; /* Eliminar cualquier borde */
+    box-shadow: none !important; /* Eliminar cualquier sombra */
+    display: flex; /* Asegura que el contenedor del botón se ajuste al contenido */
+    justify-content: center; /* Centra el contenido dentro del botón */
+    align-items: center; /* Centra el contenido dentro del botón */
+}
+
+/* Asegurarse de que las imágenes dentro de .btn no tengan estilos de fondo */
+.btn img {
+    background: none; /* Eliminar fondo de la imagen */
+    box-shadow: none; /* Eliminar sombra de la imagen */
+}
+
+  .btn-content {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+/* Estilo del texto dentro del botón */
+
+        .btn-text {
+            position: absolute;
+			text-transform: lowercase; /* Convierte el texto a minúsculas */
+            font-size: 2vh; /* Ajusta el tamaño del texto según sea necesario */
+            top: -40%; /* Ajusta este valor según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 2px 5px;
+            border-radius: 5px;
+            line-height: 1.2; /* Ajusta el interlineado según sea necesario */
+            white-space: nowrap; /* Asegura que el texto esté en una sola línea */
+			font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+			
+        }
+		
+		
+
+
+
+
+
+
+   @media all and (min-width: 155px) and (max-width: 1023px) {
+	   
+	   
+	   
+	   
+	   
+	   
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vh;
+  background-color: transparent;
+  
+}
+
+.container h2{
+  position: fixed;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: auto;
+  background-color: transparent;
+  font-size: 35px;
+   line-height: 1.2; /* Ajusta el interlineado según sea necesario */
+}
+  .carousel {
+    top: 50%;
+    z-index: 2; /* Asegura que el carrusel esté por encima de otros elementos */
+    height: 70%;
+	
+	
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Asegúrate de que el contenedor ocupe toda la altura */
+      overflow: visible
+}
+
+.carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+	
+
+}
+
+.carousel .carousel-item img {
+    width: 180vw;
+    height: 35vh;
+    object-fit: contain; /* Esto mantiene el contenido dentro de los límites del contenedor */
+    position: absolute;
+    top: 0;
+    margin-left: -20%;
+    border-radius: 15px;
+
+}
+
+.carousel .carousel-item img.disweb-img {
+    width: 200%;
+    height: auto;
+    object-fit: fill;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: -57%;
+    border-radius: 15px;
+}
+
+.carousel .carousel-item iframe {
+	    width: 90%;
+    height: 90%;
+    pointer-events: none; /* Desactiva clics en el iframe por defecto */
+    z-index: 1; /* Asegura que no bloquee otros elementos */
+}
+
+.carousel .carousel-item.active iframe {
+    pointer-events: auto; /* Activa clics solo en el iframe visible */
+    z-index: 1; /* Asegura que esté encima */
+}
+
+
+
+.carousel-txt {
+  position: absolute; /* Posiciona el texto sobre la imagen */
+  top: 58%; /* Ajusta la posición vertical según tu diseño */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translateX(-50%); /* Centrado perfecto horizontal */
+  font-size: 25px; /* Ajusta el tamaño del texto según sea necesario */
+  color: white; /* Cambia el color del texto para que sea legible sobre la imagen */
+  width: 90%; /* Permite al texto ocupar casi todo el ancho del contenedor */
+  max-width: 90%; /* Limita el ancho del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 1.2; /* Incrementa el espaciado entre líneas */
+  word-wrap: break-word; /* Asegura que las palabras largas se dividan */
+  word-break: break-word; /* Compatible con navegadores más antiguos */
+  z-index: 1; /* Asegura que esté sobre la imagen */
+  word-break: break-word; /* Compatibilidad adicional */
+  overflow-wrap: break-word; /* Alternativa moderna */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+  padding: 10px 15px; /* Espaciado interno para el fondo */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+
+
+/* Flechas de navegación */
+.carousel-arrow {
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3; /* Asegura que las flechas estén por encima del iframe */
+}
+.carousel-arrow.left {
+     z-index: 3; /* Asegura que las flechas estén por encima del iframe */
+    pointer-events: auto; /* Asegura que los clics se registren en las flechas */
+	left: 5%;
+}
+
+.carousel-arrow.right {
+    right: 5%;
+	z-index: 3; /* Asegura que las flechas estén por encima del iframe */
+    pointer-events: auto; /* Asegura que los clics se registren en las flechas */
+
+}
+
+
+
+/* Inicio para Sublimacion, carteleria y neones */
+
+
+a.Home[href="index.html"] {
+	
+  display: none;
+}
+
+a.Home[href="Neones.html"],
+a.Home[href="Carteleria.html"],
+a.Home[href="Sublimacion.html"] {
+  
+  height: 35vh;
+  display: inline-block;
+  transform: translate(-0%, -10%);
+ }
+
+
+
+h1.center-align.titulo{
+    height: 100%; /* Ajusta la altura específica */
+	transform: translate(0%, 4%);
+    display: inline-block;
+    text-align: center;
+	font-size: 35px;
+	 line-height: 1.2; /* Incrementa el espaciado entre líneas */
+
+}
+
+
+   /* Estilo del botón */
+   
+.btn {
+    height: 13vh; /* Altura específica del botón */
+    position: relative; /* Necesario para manejar 'top' y 'left' */
+    top: 21%; /* Distancia desde la parte superior */
+    left: -92%; /* Ajusta la posición horizontal */
+    z-index: 3; /* Asegura que esté encima de otros elementos */
+	
+    width: auto; /* Opcional: Ajusta según la proporción deseada */
+    display: flex; /* Para alinear el contenido interno */
+    justify-content: center; /* Centra horizontalmente el contenido interno */
+    align-items: center; /* Centra verticalmente el contenido interno */
+}
+
+.btn img {
+    max-height: 8vh; /* Limita la altura de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste bien */
+}
+
+
+}
