@@ -1,0 +1,1090 @@
+
+header, section, body, footer {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+body {
+    text-align: center;
+	
+}
+
+#myVideo,
+#myVideo2 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 140vh;
+    object-fit: cover;
+    z-index: -1;
+    background-color: transparent;
+}
+
+#myVideo2 {
+    display: none;	
+}
+
+#contacto-icono2 {
+    display: none;	
+}
+
+#cv {
+    display: none;	
+}
+#inicio-responsive {
+    display: none;	
+}
+
+#inicio2, #contacto-icono2 {
+    width: 50px; /* Ajusta el tamaño de los íconos */
+    height: auto;
+}
+
+#botonera {
+
+     font-family: 'Montserrat', sans-serif; /* Asegúrate de poner comillas y agregar sans-serif como respaldo */
+    font-weight: bold;
+    width: 100%;
+    height: 14vh;
+	position: absolute;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center; /* Añadido para centrar verticalmente */
+    position: absolute;
+    top: 7%;
+    transform: translate(0%, -50%);
+    background: linear-gradient(to right, #eff3f8 8%, #0859ae 62%, #0859ae 30%);/* Degradado de colores */
+    font-size: clamp(12px, 24px); /* Mínimo 16px, ideal 2.5% del ancho, máximo 24px */
+
+}
+
+#botonera ul {
+    display: flex;
+margin-left: 27%;
+}
+
+
+#botonera li {
+    display: inline-block;
+    margin-left: 2%;
+	
+}
+	
+#botonera ul li a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    height: 100%; /* Asegura que el enlace ocupe toda la altura del li */
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto e imágenes dentro del enlace */
+	margin-top: 1.5vh;
+
+
+}
+
+
+#botonera ul li a:hover {
+    color: #000000; /* Color del texto al pasar el mouse por encima */
+}
+
+
+#botonera li:first-child {
+    margin-top: 1pv; /* Ajusta este valor para bajar solo el elemento que contiene la imagen */
+}
+
+
+
+
+
+/* Sección Home */
+.Home {
+
+ 	display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    left: 10%;
+	top: 5%;
+	margin: 0%;
+	position: absolute;
+     z-index: 2; /* Asegura que el carrusel esté por encima de otros elementos */
+	 
+
+}
+
+.Home img {
+  height: 36%;
+margin-bottom: 0px;
+
+}
+
+
+.next {
+	display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+	transform: scale(1);
+    right: 10%;
+	top: 5%;
+	margin: 0%;
+	position: absolute;
+     z-index: 2; /* Asegura que el carrusel esté por encima de otros elementos */
+
+}
+
+.next img {
+
+   height: 37%;
+margin-bottom: 0px;
+ 
+}
+
+
+
+#contacto {
+      background-image: linear-gradient(-45deg, #e3ddd9 50%, #0859ae 50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#contacto #botonera {
+    position: fixed;
+    left: 74%;
+    margin-top: 3%;
+    margin-right: 50%;
+    background: None;
+
+}
+
+#informacion {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 79%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 160%;
+    text-align: left;
+    margin-top: 10vh;
+    align-items: center;
+    line-height: 1; /* Ajusta este valor según sea necesario */
+    display: flex; /* Añadido para alinear los artículos horizontalmente */
+    flex-direction: row; /* Asegura la disposición horizontal */
+	
+   
+}
+
+#informacion article {
+    display: inline-block;
+
+}
+#informacion article img{
+    width: auto;
+	height: 10vh;
+	text-align: center;
+
+}
+
+
+#wsp a{
+   text-decoration: none; /* Elimina subrayado del enlace */
+        display: flex;
+  flex-direction: column; /* Apila los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-decoration: none; /* Quita el subrayado del enlace */
+   
+		}
+
+#wsp span {
+  font-size: 26px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+#Linkedin a{
+   text-decoration: none; /* Elimina subrayado del enlace */
+     display: flex;
+  flex-direction: column; /* Apila los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-decoration: none; /* Quita el subrayado del enlace */
+
+		}
+		
+#Linkedin span {
+  font-size: 26px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+		
+#email a{
+   text-decoration: none; /* Elimina subrayado del enlace */
+        display: flex;
+  flex-direction: column; /* Apila los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-decoration: none; /* Quita el subrayado del enlace */
+      
+		}
+		
+#email span {
+  font-size: 26px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+
+.inicio {
+
+  transform: translate(-55%, -29%) scale(0.13);
+	position: absolute;
+    background: None;
+       z-index: 1;
+}
+.Inicio {
+    position: absolute;
+    top: 50%;
+	left: 20%;
+	transform: translate(-23%, -32%) scale(0.12);
+    width: 3px;
+    z-index: 3; /* Asegura que las flechas estén por encima del iframe */
+}
+
+
+.contacto-icono {
+
+  transform: translate(-42%, -29%) scale(0.13);
+	position: absolute;
+    background: None;
+       z-index: 1;
+}
+
+#contacto #inicio {
+	transform: translate(0%, -30%) scale(0.25); 
+}
+
+#inicio2 {
+	    display: none;
+  
+}
+
+#next2 {
+
+	 display: none;
+  
+}
+
+
+.contacto-icono2 {
+	  display: none;
+    width: 0vw; 
+}
+
+.yo {
+	
+    position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%) scale(1);
+  width: 50vw; 
+  height: auto; 
+margin-top: 1vh;
+}
+
+.textoinicio {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.1em; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+	line-height: 0.4; /* Ajusta el interlineado según sea necesario */
+	    margin-top: 6%; /* Ajusta el margen superior para bajar el contenido */
+    text-align: center;
+
+	
+}
+
+
+
+.textoinicio .nombre {
+    font-size: 14em;
+    color: #000000;
+
+}
+
+.textoinicio .profesion {
+    font-size: 10em;
+    color: #000000;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 440px){
+	
+	/*  background: rgba(8, 89, 174, 0.8); /* Fondo con transparencia (80% opaco) */
+   	/*  backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
+   	/*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar profundidad */ 
+	
+	
+
+	
+#myVideo {
+    display: none;	
+}
+
+#myVideo2 {
+	   display: block;
+    position: fixed;
+    top: 39%;
+    width: 134vw; /* Ajusta el ancho al 50% del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción */
+
+
+}
+
+
+#inicio-responsive {
+    position: fixed;  /* Mantiene ambos íconos en una ubicación fija */
+    top: 8.5%;         /* Ajusta según la posición deseada */
+    left: 50%;
+    display: flex;    /* Alinea los íconos en una misma fila */
+    gap: 10px;        /* Espacio entre ellos, ajusta según necesidad */
+    transform: translate(-50%, -50%) scale(1); /* Centra respecto a su propio tamaño */
+    z-index: 99;
+
+}
+
+#inicio2, #contacto-icono2, #cv {
+    width: 100px;
+    height: auto;
+    display: block; /* Por si acaso */
+}
+
+
+
+.next {
+	display: none;
+}
+
+#graficas #inicio2 {
+
+	  position: fixed;
+    transform: translate(20%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#graficas #next2 {
+	display: block;
+	right: -38%;	
+	   position: fixed;
+    transform: translate(0%,-32%) scale(0.18);
+    z-index: 1;
+    background-color: transparent; 
+}
+
+
+
+#dis-branding #inicio2 {
+	   position: fixed;
+    transform: translate(20%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#dis-branding #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+} 
+
+#dis-audiovisual #inicio2 {
+	  position: fixed;
+    transform: translate(20%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#dis-audiovisual #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+} 
+
+#dis-web #inicio2 {
+		  position: fixed;
+    transform: translate(20%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent; 
+}
+
+#dis-web #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,30%) scale(0.8);
+    z-index: 1;
+    background-color: transparent;
+} 
+.contacto-icono {
+
+    transform:  scale(0);
+
+  
+} 
+
+
+.next img {
+
+   height: 100%;
+ 
+}
+
+
+#botonera {
+    width: 70%; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura al contenido */
+    padding: 20px; /* Espaciado interno para comodidad visual */
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    top: 16%; /* Baja la botonera un 10% de la altura de la pantalla */
+    left: 10%;
+    transform: none; /* Elimina transformaciones innecesarias */
+    background: rgba(8, 89, 174, 0.8); /* Fondo con transparencia (80% opaco) */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);/* Sombra sutil para dar profundidad */ 
+    z-index: 10; /* Coloca la botonera sobre otros elementos */
+	    border-radius: 15px;
+	
+}
+
+    #botonera ul {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos de la lista sean verticales */
+        align-items: center; /* Centra cada ítem horizontalmente */
+        list-style: none; /* Quita los puntos de la lista */
+        padding: 0;
+        margin: 0;
+        gap: 0px; /* Espaciado entre los ítems */
+    }
+
+    #botonera ul li {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el contenido */
+    }
+
+    #botonera ul li a {
+        display: block; /* Asegura que los enlaces ocupen toda la línea */
+        text-align: center; /* Centra el texto en cada enlace */
+        color: #ffffff; /* Texto blanco */
+        text-transform: uppercase; /* Opcional: convierte el texto a mayúsculas */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 1.5em; /* Ajusta el tamaño del texto */
+        line-height: 1.9	; /* Espaciado entre líneas */
+        padding: 5px; /* Espaciado interno para un mejor clic en dispositivos táctiles */
+        transition: color 0.3s ease; /* Efecto de transición suave */
+    }
+
+    /* Oculta el ítem 'Inicio' cuando se es responsive */
+ #botonera ul li:first-child { 
+	display: none;
+	}
+ 
+
+/* Inicio para Sublimacion, carteleria y neones */
+
+
+a.Home[href="index.html"] {
+	
+  display: none;
+}
+
+a.Home[href="Neones.html"],
+a.Home[href="Carteleria.html"],
+a.Home[href="Sublimacion.html"] {
+  
+  height: 35vh;
+  display: inline-block;
+  transform: translate(-0%, -90%);
+   z-index: 50; /* Asegura que esté encima de otros elementos */
+ }
+
+
+
+/* Inicio para pagina principal */
+
+
+#contacto {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+#contacto #botonera {
+    position: fixed;
+    left: 74%;
+    margin-top: 3%;
+    margin-right: 50%;
+    background: None;
+
+}
+/* Inicio para contacto */
+#inicio { 
+	position: relative; /* Esto establece un contexto para los elementos hijos */
+     z-index: 3;
+    width: auto; /* Mantén el ancho automático */
+    height: auto;
+    left: -40%; /* Centra el elemento */
+    top: 14%;
+    transform: scale(0.5); /* Aumenta el tamaño sin moverlo */
+	
+
+}
+
+	.yo {
+    position: absolute;
+  top: 45%;
+  left: 68%;
+  width: 265vw;
+    height: auto;
+
+}
+#informacion {
+	position: absolute;
+    transform: translate(-40%, -20%);
+    font-size: 100%;
+ 
+	}
+
+#informacion ul,
+#informacion article {
+    margin-top: 0.1vh; /* Quita márgenes externos */
+    padding: 0; /* Quita márgenes internos */
+    margin-right: 5vw; 
+}
+
+#informacion article {
+    display: flex; /* Mantén flex para alinear contenido dentro de cada artículo */
+    align-items: center; /* Centra verticalmente el contenido del artículo */
+    gap: 2px; /* Espaciado entre el ícono y el enlace */
+}
+
+#wsp a{
+   width: 100%; /* Mantén el ancho automático */
+    height: auto;
+   
+		}
+
+#wsp span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+#Linkedin a{
+  width: 100%; /* Mantén el ancho automático */
+    height: auto;
+
+		}
+		
+#Linkedin span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+		
+#email a{
+   width: 100%; /* Mantén el ancho automático */
+    height: auto;
+      
+		}
+		
+#email span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+.textoinicio {
+   transform: translate(50%,0%);
+    z-index: 10;
+  
+	}
+
+.textoinicio .nombre {
+	  width: 90%; /* Fuerza el ancho */
+    height: auto; /* Ajusta proporcionalmente */
+       color: #ffffff;
+    transform: translate(-45%, -445%); /* Ajuste para el centro */
+	 line-height: 1.2; /* Espaciado entre líneas */
+	text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8); /* Sombra sutil */
+	    text-align: left;
+  font-size: 42px; /* Tamaño base del texto */
+
+}
+
+.textoinicio .profesion {
+
+    color: #000000;
+     position: absolute;
+    top: 15vh;  /* Se mueve en relación con la altura de la pantalla */
+    left: 0vw; /* Se mueve en relación con el ancho de la pantalla */
+    transform: translate(-47%, 0%); /* Centra el texto en ese punto */
+    line-height: 1.3;
+	  font-size: 28px; /* Tamaño base del texto */
+	      width: 70%; /* Mantén el ancho automático */
+    height: auto;
+    text-align: center; /* Asegura que el texto esté alineado a la izquierda */
+
+}		
+
+
+#contacto #inicio { 
+	position: relative; /* Esto establece un contexto para los elementos hijos */
+     z-index: 3;
+    width: auto; /* Mantén el ancho automático */
+    height: auto;
+    left: -30%; /* Centra el elemento */
+    top: 5%;
+    transform: scale(0.3); /* Aumenta el tamaño sin moverlo */
+}
+
+#wsp span {
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+
+#Linkedin span {
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+		
+		
+#email span {
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 380px){
+    /* Estilos para móviles medianos */
+	
+		/*  background: rgba(8, 89, 174, 0.8); /* Fondo con transparencia (80% opaco) */
+   	/*  backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
+   	/*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar profundidad */ 
+	
+	
+
+	
+#myVideo {
+    display: none;	
+}
+
+#myVideo2 {
+	 top: 40%; /* Baja la botonera un 10% de la altura de la pantalla */
+    display: block;
+	left: 50%
+
+}
+
+
+#inicio-responsive {
+    position: fixed;  /* Mantiene ambos íconos en una ubicación fija */
+    top: 8.5%;         /* Ajusta según la posición deseada */
+    left: 50%;
+    display: flex;    /* Alinea los íconos en una misma fila */
+    gap: 10px;        /* Espacio entre ellos, ajusta según necesidad */
+    transform: translate(-50%, -50%) scale(0.8); /* Centra respecto a su propio tamaño */
+    z-index: 99;
+
+}
+
+#inicio2, #contacto-icono2, #cv {
+    width: 100px;
+    height: auto;
+    display: block; /* Por si acaso */
+}
+
+
+
+.next {
+	display: none;
+}
+
+#graficas #inicio2 {
+
+	   position: fixed;
+    transform: translate(20%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent; 
+}
+
+#graficas #next2 {
+	display: block;
+	right: -41%;	
+	   position: fixed;
+    transform: translate(0%,-36%) scale(0.13);
+    z-index: 1;
+    background-color: transparent; 
+}
+
+
+
+#dis-branding #inicio2 {
+	   position: fixed;
+    transform: translate(20%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#dis-branding #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+} 
+
+#dis-audiovisual #inicio2 {
+	   position: fixed;
+    transform: translate(20%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#dis-audiovisual #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+} 
+
+#dis-web #inicio2 {
+	   position: fixed;
+    transform: translate(20%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+  
+}
+
+#dis-web #contacto-icono2 {
+	   position: fixed;
+	   right: 5%;
+    transform: translate(0%,10%) scale(0.6);
+    z-index: 1;
+    background-color: transparent;
+} 
+.contacto-icono {
+
+    transform:  scale(0);
+
+  
+} 
+
+
+.next img {
+
+   height: 100%;
+ 
+}
+
+
+#botonera {
+    width: 70%; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura al contenido */
+    padding: 20px; /* Espaciado interno para comodidad visual */
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    top: 17%; /* Baja la botonera un 10% de la altura de la pantalla */
+    left: 10%;
+    transform: none; /* Elimina transformaciones innecesarias */
+    background: rgba(8, 89, 174, 0.8); /* Fondo con transparencia (80% opaco) */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);/* Sombra sutil para dar profundidad */ 
+    z-index: 10; /* Coloca la botonera sobre otros elementos */
+	    border-radius: 15px;
+	
+}
+
+    #botonera ul {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos de la lista sean verticales */
+        align-items: center; /* Centra cada ítem horizontalmente */
+        list-style: none; /* Quita los puntos de la lista */
+        padding: 0;
+        margin: 0;
+        gap: 0px; /* Espaciado entre los ítems */
+    }
+
+    #botonera ul li {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el contenido */
+    }
+
+    #botonera ul li a {
+        display: block; /* Asegura que los enlaces ocupen toda la línea */
+        text-align: center; /* Centra el texto en cada enlace */
+        color: #ffffff; /* Texto blanco */
+        text-transform: uppercase; /* Opcional: convierte el texto a mayúsculas */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 1.2em; /* Ajusta el tamaño del texto */
+        line-height: 1.5; /* Espaciado entre líneas */
+        padding: 7px; /* Espaciado interno para un mejor clic en dispositivos táctiles */
+        transition: color 0.3s ease; /* Efecto de transición suave */
+    }
+
+    /* Oculta el ítem 'Inicio' cuando se es responsive */
+ #botonera ul li:first-child { 
+	display: none;
+	}
+ 
+
+/* Inicio para Sublimacion, carteleria y neones */
+
+
+a.Home[href="index.html"] {
+	
+  display: none;
+}
+
+a.Home[href="Neones.html"],
+a.Home[href="Carteleria.html"],
+a.Home[href="Sublimacion.html"] {
+  
+  height: 35vh;
+  display: inline-block;
+  transform: translate(-0%, -90%);
+   z-index: 50; /* Asegura que esté encima de otros elementos */
+ }
+
+
+
+/* Inicio para pagina principal */
+
+
+#contacto {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+#contacto #botonera {
+    position: fixed;
+    left: 74%;
+    margin-top: 3%;
+    margin-right: 50%;
+    background: None;
+
+}
+/* Inicio para contacto */
+#inicio { 
+	position: relative; /* Esto establece un contexto para los elementos hijos */
+     z-index: 3;
+    width: auto; /* Mantén el ancho automático */
+    height: auto;
+    left: -40%; /* Centra el elemento */
+    top: 14%;
+    transform: scale(0.5); /* Aumenta el tamaño sin moverlo */
+	
+
+}
+
+	.yo {
+    position: absolute;
+  top: 45%;
+  left: 62%;
+  width: 205vw;
+    height: auto;
+
+}
+#informacion {
+	position: absolute;
+    transform: translate(-40%, -20%);
+    font-size: 100%;
+ 
+	}
+
+#informacion ul,
+#informacion article {
+    margin-top: 0.1vh; /* Quita márgenes externos */
+    padding: 0; /* Quita márgenes internos */
+    margin-right: 5vw; 
+}
+
+#informacion article {
+    display: flex; /* Mantén flex para alinear contenido dentro de cada artículo */
+    align-items: center; /* Centra verticalmente el contenido del artículo */
+    gap: 2px; /* Espaciado entre el ícono y el enlace */
+}
+
+#wsp a{
+   width: 100%; /* Mantén el ancho automático */
+    height: auto;
+   
+		}
+
+#wsp span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+#Linkedin a{
+  width: 100%; /* Mantén el ancho automático */
+    height: auto;
+
+		}
+		
+#Linkedin span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+		
+#email a{
+   width: 100%; /* Mantén el ancho automático */
+    height: auto;
+      
+		}
+		
+#email span {
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+.textoinicio {
+   transform: translate(50%,0%);
+    z-index: 10;
+  
+	}
+
+.textoinicio .nombre {
+	  width: 90%; /* Fuerza el ancho */
+    height: auto; /* Ajusta proporcionalmente */
+       color: #ffffff;
+    transform: translate(-45%, -500%); /* Ajuste para el centro */
+	 line-height: 1.2; /* Espaciado entre líneas */
+	text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8); /* Sombra sutil */
+	    text-align: left;
+  font-size: 37px; /* Tamaño base del texto */
+
+}
+
+.textoinicio .profesion {
+
+    color: #000000;
+     position: absolute;
+    top: -2vh;  /* Se mueve en relación con la altura de la pantalla */
+    left: 0vw; /* Se mueve en relación con el ancho de la pantalla */
+    transform: translate(-47%, 0%); /* Centra el texto en ese punto */
+    line-height: 1.3;
+	  font-size: 22px; /* Tamaño base del texto */
+	      width: 55%; /* Mantén el ancho automático */
+    height: auto;
+    text-align: center; /* Asegura que el texto esté alineado a la izquierda */
+
+}
+
+
+#contacto #inicio { 
+	position: relative; /* Esto establece un contexto para los elementos hijos */
+     z-index: 3;
+    width: auto; /* Mantén el ancho automático */
+    height: auto;
+    left: -30%; /* Centra el elemento */
+    top: 4%;
+    transform: scale(0.25); /* Aumenta el tamaño sin moverlo */
+}
+
+#wsp span {
+  font-size: 17px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+
+#Linkedin span {
+  font-size: 17px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+		
+		
+#email span {
+  font-size: 17px; /* Ajusta el tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+   height: 12vh;
+}
+
+
+	
+}
